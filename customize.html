@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="gooseApp">
+  <head>
+    <!-- ==============================================
+    Title and Meta Tags
+    =============================================== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goosemonger | Customize</title>
+    <meta name="description" content="Customize your Goosemonger for the perfect companion">
+    <meta name="keywords" content="Goosemonger, bot, humanoid, customize, there when you need it, goose, monger, appliance">
+    <meta name="author" content="Michael Geise">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="icon" 
+      type="image/png" 
+      href="img/goosemonger-favicon.png">
+
+    <!-- ==============================================
+    CSS
+    =============================================== -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ==============================================
+    Fonts
+    =============================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Oxygen|Copse' rel='stylesheet' type='text/css'>
+
+    <!-- ==============================================
+    JS
+    =============================================== -->
+    <script src="js/vendor/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-12293005-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body ng-controller="GooseCustomize as customize">
+    <!-- Navigation -->
+    <div ng-include="'page-navigation.html'" class="ng-cloak"></div>
+    <!-- /navigation -->
+
+    <div class="row gmtop">
+      <hr>
+    </div>
+    <!-- slider -->
+    <div class="row">
+        <h1>Customize Your Goosemonger</h1>
+        <ul class="my-orbit" data-orbit>
+          <li>
+            <img src="img/orbit1.png" alt="Dinner Party" class="orbit-slide is-active" />
+            <div class="orbit-caption">
+              A perfect host
+            </div>
+          </li>
+          <li class="active">
+            <img src="img/orbit2.png" alt="Golfing" class="orbit-slide" />
+            <div class="orbit-caption">
+              An avid caddy
+            </div>
+          </li>
+          <li>
+            <img src="img/orbit3.png" alt="Wheelchair" class="orbit-slide" />
+            <div class="orbit-caption">
+              There when you need it
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- end slider -->
+      <div class="row">
+        <div class="large-12 columns">
+          <h4>How To Customize Your Goosemonger</h4>
+          <p>Adjust the amount of each attribute between low, medium, or high to find the perefect match for you.</p>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+      </div>
+
+      <div ng-repeat="slide in customize.slides" class="ng-cloak">
+        <div class="row" ng-controller="TabController as tab">
+          <div class="medium-6  medium-offset-1 columns">
+            <img ng-show="tab.isSet(1)" ng-src="{{slide.images[0].one}}"/>
+            <img ng-show="tab.isSet(2)" ng-src="{{slide.images[0].two}}"/>
+            <img ng-show="tab.isSet(3)" ng-src="{{slide.images[0].three}}"/> 
+          </div>
+          <div class="medium-5 columns">
+            <h4 class="disposition">{{slide.name}}</h4>
+            <p>{{slide.caption}}</p>
+            <!-- A default button-group -->
+            <ul class="button-group">
+              <li ng-class="{ active:tab.isSet(1) }"><a href="" ng-click="tab.setTab(1) ; slides.counter() ; count = 0" class="button less">Less</a></li>
+              <li ng-class="{ active:tab.isSet(2) }"><a href="" ng-click="tab.setTab(2) ; count = 1" ng-init="count=1" class="button neutral">Neutral</a></li>
+              <li ng-class="{ active:tab.isSet(3) }"><a href="" ng-click="tab.setTab(3) ; count = 2" class="button more">More</a></li>
+            </ul>
+            <p>Level: <span class="numberCount">{{count}}</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <hr>
+        </div>
+      </div>
+      <div ng-controller="ResultController as result">
+        <div class="row result-div result-dog">
+          <div class="medium-4  medium-offset-1 columns">
+            <h4>Your Goosemonger is comparible to:</h4>
+            <h2 class="ng-binding">A Golden Retriever</h2>
+            <p class="ng-binding">Happy and loyal but not the brightest star in the sky.</p>
+          </div>
+          <div class="medium-6  medium-offset-1 columns">
+            <img ng-src="img/dog.gif" src="img/dog.gif">
+          </div>
+        </div>
+        <div class="row result-div result-jester">
+          <div class="medium-4  medium-offset-1 columns">
+            <h4>Your Goosemonger is comparible to:</h4>
+            <h2 class="ng-binding">A Jester</h2>
+            <p class="ng-binding">Always the center of attention but unhappy wihout a crowd.</p>
+          </div>
+          <div class="medium-6  medium-offset-1 columns">
+            <img ng-src="img/jester.gif" src="img/jester.gif">
+          </div>
+        </div>
+        <div class="row result-div result-toilet">
+          <div class="medium-4  medium-offset-1 columns">
+            <h4>Your Goosemonger is comparible to:</h4>
+            <h2 class="ng-binding">A Toilette</h2>
+            <p class="ng-binding">Cold and ugly but every house needs one.</p>
+          </div>
+          <div class="medium-6  medium-offset-1 columns">
+            <img ng-src="img/toilette.gif" src="img/toilette.gif">
+          </div>
+        </div>
+        <div class="row result-div result-vader">
+          <div class="medium-4  medium-offset-1 columns">
+            <h4>Your Goosemonger is comparible to:</h4>
+            <h2 class="ng-binding">Darth Vader</h2>
+            <p class="ng-binding">Smart and powerful but evil.</p>
+          </div>
+          <div class="medium-6  medium-offset-1 columns">
+            <img ng-src="img/vader.gif" src="img/vader.gif">
+          </div>
+        </div>
+        <div class="row result-div result-apple">
+          <div class="medium-4  medium-offset-1 columns">
+            <h4>Your Goosemonger is comparible to:</h4>
+            <h2 class="ng-binding">An apple</h2>
+            <p class="ng-binding">Good all around but very common.</p>
+          </div>
+          <div class="medium-6  medium-offset-1 columns">
+            <img ng-src="img/apple.gif" src="img/apple.gif">
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div ng-include="'footer.html'" class="ng-cloak"></div>
+      <!-- /footer -->
+    
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
