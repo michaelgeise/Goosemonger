@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="gooseApp" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <!-- ==============================================
+    Title and Meta Tags
+    =============================================== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goosemonger | The Best Kind of Monger</title>
+    <meta name="description" content="Goosemonger - the best kind of monger">
+    <meta name="keywords" content="Goosemonger, bot, humanoid, best kind, there when you need it, goose, monger, appliance">
+    <meta name="author" content="Michael Geise">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="img/america.png" />
+
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="icon" 
+      type="image/png" 
+      href="img/goosemonger-favicon.png">
+
+    <!-- ==============================================
+    CSS
+    =============================================== -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ==============================================
+    Fonts
+    =============================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower|Noto+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen|Copse' rel='stylesheet' type='text/css'>
+    
+    <!-- ==============================================
+    JS
+    =============================================== -->
+    <script src="js/vendor/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-12293005-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    
+    <div class="row home text-center hide-for-small-only">
+    	<video autoplay loop poster="img/heromonger-bg.jpg" id="bgvid">
+			<source src="img/heromonger-bg.webm" type="video/webm">
+			<source src="img/heromonger-bg.mp4" type="video/mp4">
+		</video>
+        <div class="large-12 columns">
+	        <h1>Goosemonger</h1>
+	        <h3>The Best Kind of Monger</h3>
+        	<div class="buttons">
+				<a href="learn" class="large button primary">Learn</a>
+				<a href="customize" class="large button success">Customize</a>
+			</div>
+        </div>
+     </div>
+     <div class="row home text-center show-for-small-only mobile-index">
+        <div class="large-12 columns">
+	        <h1>Goosemonger</h1>
+	        <h3>The Best Kind of Monger</h3>
+        	<div class="buttons">
+				<a href="learn" class="large button primary">Learn</a>
+				<a href="customize" class="large button success">Customize</a>
+			</div>
+        </div>
+     </div>
+  
+     <!-- footer -->
+     <div class="footguy ng-cloak" ng-include="'footer.html'"></div>
+     <!-- /footer -->
+     <!-- JS -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+@media only screen and (min-width: 40.0625em) {
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    background: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 4px;
+  }
+  .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    border-right: solid 1px #DDDDDD;
+    height: 54px;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: #EFEFEF;
+    background-color: #EFEFEF;
+    color: #008CBA;
+  }
+}
+@media only screen and (min-width: 40em) {
+  .top-bar {
+    text-align: center; 
+    background: #ffffff;
+    }
+
+  ul.center-buttons {
+    display: inline-block; }
+
+  .logo {
+    left: 5px;
+    top: -2px;
+    position: absolute; }
+}
+
+/* end media queries */
+
+
+* {
+  font-family: 'Oxygen', sans-serif;
+}
+h1, h2, h3, h4, h5, .panel h1, .panel h2, .panel h3, .panel h4, .panel h5 {
+  font-family: 'Copse', serif;
+  color: #6D6D6D;
+}
+
+.mobile-index {
+    background-image: url("../img/mobile-bg.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+}
+
+body.f-topbar-fixed {
+  padding-top: 0;
+}
+.row.gmtop {
+  margin-top: 54px;
+}
+
+.row.brains {
+  margin: 40px auto;
+}
+
+.logo {
+  max-width: 2rem;
+  margin-top: -3px;
+  margin-left: 5px; }
+
+.menu-icon {
+  padding-top: 1.2rem; }
+
+.top-bar.expanded {
+  background: #333333; }
+
+.logo {
+  margin-top: .5rem; }
+
+.top-bar-section ul li > a {
+  color: #008CBA;
+}
+.top-bar {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+  height: 54px;
+  }
+.top-bar.expanded {
+    background: #ffffff;
+}
+.top-bar .toggle-topbar.menu-icon a {
+  color: #008CBA;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+  box-shadow: 0 0 0 1px #008CBA, 0 7px 0 1px #008CBA, 0 14px 0 1px #008CBA;
+}
+.top-bar.expanded .toggle-topbar a {
+  color: #008CBA;
+}
+.top-bar.expanded .toggle-topbar a span::after {
+  box-shadow: 0 0 0 1px #008CBA, 0 7px 0 1px #008CBA, 0 14px 0 1px #008CBA;
+}
+.top-bar-section ul li {
+  background: #ffffff;
+}
+.top-bar-section ul li:hover {
+  background: #EFEFEF;
+}
+.top-bar-section .divider, .top-bar-section [role="separator"]{
+  border-top: solid 1px #DDDDDD;
+}
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background-color: #EFEFEF;
+  color: #008CBA;
+  background: #EFEFEF;
+}
+.top-bar .toggle-topbar.menu-icon {
+  margin-top: -8px;
+ }
+.panel {
+  background: #ffffff;
+  border: none;
+}
+
+.disclaimer-text {
+  font-size: 12px;
+  color: #B1B1B1;
+}
+
+.result-div {
+  display: none;
+}
+
+
+.orbit-slide {
+  display: none;
+}
+
+.orbit-slide.is-active {
+  display: block;
+}
+
+/* Paint Style */
+
+#line{
+  height: 550px;
+  background: url("../img/color-me-line.png")no-repeat;
+  border-spacing: 0px;
+  background-size: cover;
+  cursor: crosshair;
+  z-index:2;
+  pointer-events:none;
+  margin-top: -550px;
+
+}
+#back{
+  height: 550px;
+}
+#back table {
+  height: 550px;
+  width: 100%;
+  background: url("../img/color-me.jpg")no-repeat;
+  background-size: cover;
+  border-spacing: 0px;
+  cursor: crosshair;
+  border:0px
+}
+#back table tr.even, #back table tr.alt, #back table tr:nth-of-type(even){
+  background-color: rgba(255,255,255, 0);
+}
+#back table tr td {
+    border-top: none;
+    padding: 1% 1% 0 0;
+    background:transparent;
+   -webkit-transition: all .5s ease;
+   border-radius: 50%;
+}
+
+#pallet {
+  position: relative;
+  top: -500px;
+  float: right;
+  margin-bottom: -150px;
+}
+#blue{
+width:30px;
+height:30px;
+background: rgb(165, 213, 243);
+border:1px solid;
+clear: both;
+margin-top: 10px;
+}
+#red{
+width:30px;
+height:30px;
+background: rgb(239, 63, 35);
+border:1px solid;
+clear: both;
+margin-top: 10px;
+}
+#random{
+width:30px;
+height:30px;
+background: purple;
+text-align: center;
+font-family: arial;
+font-size:20px;
+color:white;
+border:1px solid #000000;
+clear: both;
+margin-top: 10px;
+}
+#erase{
+width:30px;
+height:30px;
+background: pink;
+right: 30px;
+font-family: arial;
+font-size:9px;
+text-align: center;
+border:1px solid;
+clear: both;
+margin-top: 10px;
+}
+
+/*  home page style*/
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/heromonger-bg.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  /*.home {
+    background-color: rgba(255, 255, 255, .5);
+    height: 100%;
+  }*/
+  .home h1 {
+    margin-top: 18%;
+    color: #9fd7ff;
+    text-shadow:
+      -2px -2px 0 #7D7D7F,  
+      2px -2px 0 #7D7D7F,
+      -2px 2px 0 #7D7D7F,
+      2px 2px 0 #7D7D7F;
+      font-size: 7rem;
+      font-family: 'Noto Serif', serif;
+      text-transform: uppercase;
+  }
+  .home h3 {
+    color: #ff3600;
+    font-size: 3rem;
+    font-family: 'Indie Flower', cursive;
+  }
+  .home .buttons {
+    margin-top: 50px;
+  }
+  .home + .footguy footer {
+    bottom: 0;
+      position: absolute;
+      margin-left: 25%;
+      width: 50%;
+  }
+.prefix, .postfix {
+  padding: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+  .home h1 {
+      margin-top: 30%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .home + .footguy footer {
+  margin-left: 0%;
+  width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .home + .footguy footer p, .home + .footguy footer .inline-list.right, .home + .footguy footer .inline-list > li, footer p, footer .inline-list.right, footer .inline-list > li  {
+  float: none !important;
+  text-align: center;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .home h1 {
+      font-size: 4rem;
+  }
+  .home h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home h1 {
+      font-size: 3rem;
+      text-shadow: -1px -1px 0 #7D7D7F, 1px -1px 0 #7D7D7F, -1px 1px 0 #7D7D7F, 1px 1px 0 #7D7D7F;
+  }
+  .home h3 {
+    font-size: 1rem;
+  }
+  #mc_embed_signup.panel {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home h1 {
+      font-size: 2rem;
+  }
+  .home h3 {
+    font-size: 1rem;
+  }
+}
