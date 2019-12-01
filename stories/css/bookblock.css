@@ -1,6 +1,7 @@
 .bb-bookblock {
 	width: 100%;
 	height: 54vw;
+	max-height: 90vh;
 	margin: 0 auto;
 	position: relative;
 	z-index: 100;
@@ -8,6 +9,9 @@
 	perspective: 1300px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+}
+.bb-bookblock img {
+	max-height: 90vh;
 }
 
 .bb-page {
