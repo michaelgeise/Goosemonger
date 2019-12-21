@@ -233,7 +233,7 @@ header.masthead .hero {
 }
 @media (max-width: 992px) {
   header.masthead .hero {
-    background-position: 120% 110%;
+    background-position: 120% 45%;
   }
 }
 @media (max-width: 768px) {
