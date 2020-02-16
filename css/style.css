@@ -202,23 +202,19 @@ img::-moz-selection {
 }
 
 header.masthead {
-  text-align: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  background: #f7f7f7; /* Old browsers */
-  background: -moz-linear-gradient(top,  #f7f7f7 0%, #9fd7ff 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #f7f7f7 0%,#9fd7ff 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #f7f7f7 0%,#9fd7ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#9fd7ff',GradientType=0 ); /* IE6-9 */
-
+    text-align: center;
+    background: #f7f7ff;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/hero.svg);
 }
 header.masthead .hero {
-  background-image: url("../img/hero-pattern.svg");
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-size: 30px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/hero-b.svg);
 }
 
 header.masthead .intro-text {
