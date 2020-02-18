@@ -76,6 +76,43 @@ h6 {
 	}
 }
 
+/*media query for landscape phone*/
+@media screen and (orientation: landscape) and (max-height: 420px) {
+	.bb-bookblock {
+		margin: 0 2em 2em;
+		width: calc(100% - 4em);
+	}
+	.bb-custom-wrapper {
+	    margin: 0 auto;
+	}
+	.bb-custom-wrapper nav {
+	    position: relative;
+	    bottom: 0;
+	    width: 100vw;
+	}
+	.main {
+		padding: 1em 0;
+	}
+	.bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
+		position: absolute;
+		top: -40vw;
+		height: 27vw;
+		background: rgba(0,0,0,.5);
+	}
+	.bb-custom-wrapper nav a.bb-custom-icon-arrow-left {
+		left: 0;
+	}
+	.bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
+		right: 0;
+	}
+	.bb-custom-wrapper nav a.bb-custom-icon-arrow-left:before, .bb-custom-wrapper nav a.bb-custom-icon-arrow-right:before {
+		line-height: 27vw;
+	}
+	.bb-custom-wrapper nav a.bb-custom-icon-arrow-right:hover, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left:hover  {
+	    background: rgba(0,0,0,.3);
+	}
+}
+
 .bb-custom-wrapper nav a {
 	display: inline-block;
 	width: 60px;
