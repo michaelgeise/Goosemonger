@@ -118,11 +118,6 @@ h6 {
 .full-screen .bb-bookblock {
     margin: 0;
 }
-@media screen and (orientation: portrait){
-	.full-screen .bb-bookblock {
-	    margin-top: calc(50vh - 27vw);
-	}
-}
 
 .full-screen .bb-custom-wrapper {
 	margin: 0;
@@ -196,6 +191,14 @@ header, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper n
 }
 .invisble-ui.full-screen .full-screen-overlay {
 	opacity: 0;
+}
+@media screen and (orientation: portrait){
+	.full-screen .bb-bookblock {
+	    margin-top: calc(50vh - 27vw);
+	}
+	.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
+		height: 60vw;
+	}
 }
 
 /*end full screen mode*/
