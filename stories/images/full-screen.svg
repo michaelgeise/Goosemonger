@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.001" height="40.001" viewBox="0 0 40.001 40.001">
+  <g id="Group_10" data-name="Group 10" transform="translate(-599 -546)">
+    <g id="Group_15" data-name="Group 15" transform="translate(1 4)">
+      <g id="Group_11" data-name="Group 11" transform="translate(9 -5)">
+        <path id="Union_5" data-name="Union 5" d="M92,78a1,1,0,0,1-1-1V63a1,1,0,0,1,1-1h14a1,1,0,0,1,1,1v3a1,1,0,0,1-1,1H96V77a1,1,0,0,1-1,1Z" transform="translate(498 485)" fill="#fff"/>
+      </g>
+      <g id="Group_14" data-name="Group 14" transform="translate(1227 1129) rotate(180)">
+        <path id="Union_4" data-name="Union 4" d="M68,54a1,1,0,0,1-1-1V39a1,1,0,0,1,1-1H82a1,1,0,0,1,1,1v3a1,1,0,0,1-1,1H72V53a1,1,0,0,1-1,1Z" transform="translate(522 509)" fill="#fff"/>
+      </g>
+      <g id="Group_12" data-name="Group 12" transform="translate(1185 -47) rotate(90)">
+        <path id="Union_3" data-name="Union 3" d="M68,78a1,1,0,0,1-1-1V63a1,1,0,0,1,1-1H82a1,1,0,0,1,1,1v3a1,1,0,0,1-1,1H72V77a1,1,0,0,1-1,1Z" transform="translate(522 485)" fill="#fff"/>
+      </g>
+      <g id="Group_13" data-name="Group 13" transform="translate(51 1171) rotate(-90)">
+        <path id="Union_2" data-name="Union 2" d="M92,54a1,1,0,0,1-1-1V39a1,1,0,0,1,1-1h14a1,1,0,0,1,1,1v3a1,1,0,0,1-1,1H96V53a1,1,0,0,1-1,1Z" transform="translate(498 509)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

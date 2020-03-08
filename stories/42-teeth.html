@@ -27,14 +27,14 @@
 
     	</script>
 	</head>
-	<body>
+	<body class="full-screen invisble-ui">
 		<div class="container">
 			<header>
 				<a href="../" title="Go home" class="story-logo">
 					<img src="images/goosemonger-logo.png" alt="Goosemonger Stories"/>
 					<span>Home</span>
-					
 				</a>
+				<button id="close-full" class="close-full">Close</button>
 				<h1>42 Teeth</h1>
 				<div id="progress"><i id="pageNumber"></i>/<i id="totalPages"></i></div>
 			</header>
@@ -227,7 +227,9 @@
 						<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
 						<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
 						<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+						<a id="full-screen" href="#" class="bb-custom-icon bb-custom-icon-full">Full screen</a>
 					</nav>
+					<div class="full-screen-overlay"></div>
 				</div>
 			</div>
 		</div><!-- /container -->
@@ -319,37 +321,40 @@
 
 
 			$( document ).ready(function() {
+
+				// page count/position
 				var totalPages = $('.bb-item').length;
 
 				$("#totalPages").text(totalPages -1);
 				$("#pageNumber").text(0);
+
+				//enter full screen mode 
+				$("#full-screen").click(function(){
+				  $("body").addClass("full-screen");
+				});
+
+				// hide ui controlls and info
+				$(".bb-custom-icon").click(function(){
+					console.log("clicked the funky buttlover");
+				  $("body").addClass("invisble-ui");
+				});
+
+				// see ui controlls and info
+				$(".invisble-ui").click(function(){
+				  $(".full-screen").removeClass("invisble-ui");
+				});
+				
+				// x button to close full screen
+				$("#close-full").click(function(){
+				  $("body").removeClass("full-screen");
+				  $("body").removeClass("invisble-ui");
+				});
+
+				
 				
 			});	
 			
 			
-
-
-
-			// $( "#bb-nav-last" ).click(function() {
-			//   var pageNumber = totalPages;
-			//   $("#pageNumber").text(pageNumber);
-			// });
-			// $( "#bb-nav-first" ).click(function() {
-			//   var pageNumber = 0;
-			//   $("#pageNumber").text(pageNumber);
-			// });
-			// if (pageNumber > 0){
-			// 	$( "#bb-nav-prev" ).click(function() {
-			// 	  pageNumber--;
-			// 	  $("#pageNumber").text(pageNumber);
-			// 	});
-			// };
-			// if (pageNumber < totalPages){
-			// 	$( "#bb-nav-next" ).click(function() {
-			// 	  pageNumber++;
-			// 	  $("#pageNumber").text(pageNumber);
-			// 	});
-			// }
 			
 			
 

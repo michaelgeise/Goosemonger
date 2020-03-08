@@ -76,6 +76,131 @@ h6 {
 	}
 }
 
+/*media query for landscape phone*/
+/*@media screen and (orientation: landscape) and (max-height: 420px) {
+
+}*/
+
+/*full screen mode*/
+.full-screen-overlay {
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+
+}
+.full-screen .story-logo, .full-screen .bb-custom-icon-last, .full-screen .bb-custom-icon-first, .full-screen .bb-custom-icon-full  {
+	display: none;
+}
+
+.full-screen header {
+    position: fixed;
+    display: block;
+    z-index: 101;
+    width: 100vw;
+    color: #fff;
+}
+.full-screen .container > header h1 {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+.full-screen .full-screen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: 100;
+    display: block;
+    opacity: 1;
+}
+
+.full-screen .bb-bookblock {
+    margin: 0;
+}
+@media screen and (orientation: portrait){
+	.full-screen .bb-bookblock {
+	    margin-top: calc(50vh - 27vw);
+	}
+}
+
+.full-screen .bb-custom-wrapper {
+	margin: 0;
+}
+.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
+    position: fixed;
+    bottom: 16px;
+    height: calc(100vh - 96px);
+    width: 33vw;
+    background: none;
+    border-radius: 0;
+}
+.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left {
+	left: 0;
+	background-image: url(../images/left.svg);
+	border-right: 2px dashed white;
+}
+.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
+	right: 0;
+	background-image: url(../images/right.svg);
+	border-left: 2px dashed white;
+}
+.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left {
+    content: " ";
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right:before, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left:before  {
+    content: " ";
+}
+.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left:before, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right:before {
+	line-height: calc(100vh - 80px);
+}
+
+.full-screen  .close-full {
+	display: inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 0;
+    color: #fff;
+    font-size: 0;
+    float: left;
+    border: none;
+    background: none;
+}
+.close-full {
+	display: none;
+}
+.close-full:before {
+	content: " ";
+	display: block;
+    background-image: url(../images/close.svg);
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+} 
+.invisble-ui.full-screen header {
+	opacity: 0;
+}
+.invisble-ui.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .invisble-ui.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
+	opacity: 0;
+}
+.invisble-ui.full-screen .full-screen-overlay {
+	opacity: 0;
+}
+
+/*end full screen mode*/
+
 .bb-custom-wrapper nav a {
 	display: inline-block;
 	width: 60px;
@@ -104,6 +229,14 @@ h6 {
     line-height: 60px;
 	display: block;
 	-webkit-font-smoothing: antialiased;
+}
+
+.bb-custom-icon-full:before {
+    content: " ";
+    background-image: url(../images/full-screen.svg);
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bb-custom-icon-first:before,
