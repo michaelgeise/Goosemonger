@@ -63,7 +63,6 @@ h6 {
 
 .bb-custom-wrapper nav {
 	width: calc(100% - 4em);
-	height: 60px;
 	position: fixed;
 	bottom: 1em;
 	z-index: 101;
@@ -87,7 +86,6 @@ h6 {
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
-
 }
 .full-screen .story-logo, .full-screen .bb-custom-icon-last, .full-screen .bb-custom-icon-first, .full-screen .bb-custom-icon-full  {
 	display: none;
@@ -133,6 +131,7 @@ h6 {
     position: fixed;
     bottom: 16px;
     height: calc(100vh - 96px);
+    max-height: 80vh;
     width: 33vw;
     background: none;
     border-radius: 0;

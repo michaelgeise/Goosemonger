@@ -27,7 +27,7 @@
 
     	</script>
 	</head>
-	<body class="full-screen invisble-ui">
+	<body>
 		<div class="container">
 			<header>
 				<a href="../" title="Go home" class="story-logo">
@@ -229,10 +229,11 @@
 						<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
 						<a id="full-screen" href="#" class="bb-custom-icon bb-custom-icon-full">Full screen</a>
 					</nav>
-					<div class="full-screen-overlay"></div>
+					
 				</div>
 			</div>
 		</div><!-- /container -->
+		<div class="full-screen-overlay"></div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
@@ -334,14 +335,13 @@
 				});
 
 				// hide ui controlls and info
-				$(".bb-custom-icon").click(function(){
-					console.log("clicked the funky buttlover");
-				  $("body").addClass("invisble-ui");
+				$(".full-screen-overlay").click(function(){
+				  $("body").toggleClass("invisble-ui");
 				});
 
 				// see ui controlls and info
 				$(".invisble-ui").click(function(){
-				  $(".full-screen").removeClass("invisble-ui");
+				  $(".full-screen").toggleClass("invisble-ui");
 				});
 				
 				// x button to close full screen
