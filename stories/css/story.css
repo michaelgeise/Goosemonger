@@ -212,10 +212,13 @@ header, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper n
 .invisble-ui.full-screen .full-screen-overlay {
 	opacity: 0;
 }
-@media screen and (orientation: portrait){
+@media only screen and (max-width: 104em) and (min-height: 54vw) {
 	.full-screen .bb-bookblock {
 	    margin-top: calc(50vh - 27vw);
 	}
+}
+@media screen and (orientation: portrait){
+
 	.full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right, .full-screen .info-section {
 		height: calc(100vh - 196px);
 	}
