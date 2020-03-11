@@ -233,7 +233,7 @@
 				</div>
 			</div>
 		</div><!-- /container -->
-		<div class="full-screen-overlay"><a href="#" class="info-section"></a></div>
+		<div class="full-screen-overlay"><div class="info-section"></div></div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
@@ -339,14 +339,11 @@
 				  $("body").toggleClass("invisble-ui");
 				});
 				$("#bb-nav-next").on( 'click touchstart', function() {
-				  $("body").addClass("invisble-ui");
+				  $(".full-screen").addClass("invisble-ui");
 				});
 				$("#bb-nav-prev").on( 'click touchstart', function() {
-				  $("body").addClass("invisble-ui");
-				});
-
-				
-							
+				  $(".full-screen").addClass("invisble-ui");
+				});		
 
 				// see ui controlls and info
 				$(".invisble-ui").click(function(){
