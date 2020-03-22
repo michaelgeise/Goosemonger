@@ -49,6 +49,14 @@ h6 {
 	position: relative;
 	margin: 0 auto 40px;
 	text-align: center;
+	max-width: calc(90vh * 1.77);
+    max-height: 90vh;
+}
+
+@media only screen and (min-width: 1600px){
+	.bb-custom-wrapper, .bb-bookblock {
+	    max-height: 864px;
+	}
 }
 
 .bb-custom-wrapper .bb-bookblock {
@@ -142,6 +150,7 @@ h6 {
 	margin: 0 auto;
 	max-width: calc(90vh * 1.77);
 	max-height: 90vh;
+	overflow: hidden;
 }
 .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
     position: fixed;
