@@ -1,0 +1,23 @@
+<footer class="row">
+  <div class="large-12 columns">
+    <hr>
+    <div class="row">
+      <div class="large-6 columns">
+        <p>© Copyright Goosemonger <span id="year"></span></p>
+      </div>
+      <div class="large-6 columns">
+        <ul class="inline-list right">
+          <li><a href="../">Goosemonger Stories</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  $(document).foundation();
+</script>
+<script>
+var d = new Date();
+var n = d.getFullYear();
+    document.getElementById("year").innerHTML = n;
+</script>
