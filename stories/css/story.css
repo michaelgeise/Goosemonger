@@ -71,11 +71,12 @@ h6 {
 
 .bb-custom-wrapper nav {
 	width: calc(100% - 4em);
-	position: fixed;
-	bottom: 1em;
-	z-index: 101;
-	text-align: center;
-	max-width: 96em;
+    position: fixed;
+    bottom: 1em;
+    left: 2em;
+    z-index: 101;
+    text-align: center;
+    max-width: calc(100vw - 4em);
 }
 @media (orientation: portrait) {
 	.bb-custom-wrapper nav {
@@ -98,7 +99,9 @@ h6 {
 .full-screen .story-logo, .full-screen .bb-custom-icon-last, .full-screen .bb-custom-icon-first, .full-screen .bb-custom-icon-full, .info-section  {
 	display: none;
 }
-
+.full-screen .main {
+	overflow: hidden;
+}
 .full-screen header {
     position: fixed;
     display: block;
@@ -150,7 +153,6 @@ h6 {
 	margin: 0 auto;
 	max-width: calc(90vh * 1.77);
 	max-height: 90vh;
-	overflow: hidden;
 }
 .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
     position: fixed;
