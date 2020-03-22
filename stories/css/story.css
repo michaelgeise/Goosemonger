@@ -139,7 +139,9 @@ h6 {
 }
 
 .full-screen .bb-custom-wrapper {
-	margin: 0;
+	margin: 0 auto;
+	max-width: calc(90vh * 1.77);
+	max-height: 90vh;
 }
 .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .full-screen .bb-custom-wrapper nav a.bb-custom-icon-arrow-right {
     position: fixed;
