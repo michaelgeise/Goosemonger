@@ -12,7 +12,8 @@
 	backface-visibility: hidden;
 }
 .bb-bookblock img {
-	max-height: 90vh;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .bb-page {
