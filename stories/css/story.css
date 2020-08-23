@@ -18,7 +18,7 @@ p {
 }
 
 a {
-  color: #008CBA;
+  color: #0078FF;
 }
 
 a:hover {
@@ -26,7 +26,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #008CBA !important;
+  color: #0078FF !important;
 }
 
 h1,
@@ -245,7 +245,7 @@ header, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper n
 	height: 60px;
 	text-align: center;
 	border-radius: 4px;
-	background: #008CBA;
+	background: #0078FF;
 	color: #fff;
 	font-size: 0;
 	margin: 2px;
