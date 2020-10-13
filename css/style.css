@@ -274,7 +274,9 @@ header.masthead .intro-text .intro-heading {
   margin: 15px 0;
   text-transform: none;
 }
-
+.btn.btn-default.info-popover{
+  cursor: pointer;
+}
 #stories .story-item {
   right: 0;
   margin: 0 0 15px;
