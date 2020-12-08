@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css?v1.1" />
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 		<!-- custom demo style -->
-		<link rel="stylesheet" type="text/css" href="css/story.css" />
+		<link rel="stylesheet" type="text/css" href="css/story.css?v1.1" />
 		<script src="js/modernizr.custom.js"></script>
 		<script>
 	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -39,7 +39,16 @@
 				<h1>Domi The Dancing Dormouse</h1>
 				<div id="progress"><i id="pageNumber"></i>/<i id="totalPages"></i></div>
 			</header>
+			
 			<div class="main clearfix">
+				<div class="hype-ad">
+						
+						<img src="images/domi-the-dancing-dormouse/hype-logo.png" class="lazy" data-original="images/lazy.svg" alt="Hype Dance Community Logo"/>
+						<p>HYPE Dance Community<br />
+						Kids Virtual Dance Lessons</p>
+						<div class="close-ad">x</div>
+						<a href="https://hypedancecommunity.com/">View Classes</a>
+					</div>
 				<div class="bb-custom-wrapper">
 					<div id="bb-bookblock" class="bb-bookblock">
 						<div class="bb-item">
@@ -146,7 +155,6 @@
 						<a id="bb-nav-last" href="#" title="End of Story" class="bb-custom-icon bb-custom-icon-last">Last page</a>
 						<a id="full-screen" href="#" title="Enter Full Screen" class="bb-custom-icon bb-custom-icon-full">Full screen</a>
 					</nav>
-					
 				</div>
 			</div>
 		</div><!-- /container -->
@@ -274,6 +282,11 @@
 				$("#close-full").click(function(){
 				  $("body").removeClass("full-screen");
 				  $("body").removeClass("invisble-ui");
+				});
+
+				//x button to close ad
+				$(".close-ad").click(function () {
+				    $(".hype-ad").css("display", "none");
 				});
 
 				

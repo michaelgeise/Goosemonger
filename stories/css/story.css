@@ -81,6 +81,8 @@ h6 {
 @media (orientation: portrait) {
 	.bb-custom-wrapper nav {
 		width: calc(100% - 2%);
+		left: 1%;
+		max-width: calc(100vw);
 	}
 }
 
@@ -300,4 +302,83 @@ header, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper n
 
 .no-js .bb-custom-content {
 	height: 470px;
+}
+
+/*hype ad*/
+.full-screen .hype-ad {
+	display: none;
+}
+.hype-ad {
+	background: #4e2fa2;
+	border-radius: 20px;
+	color: #fff;
+	max-width: 600px;
+	padding: 1em;
+	text-align: left;
+	position: absolute;
+	right: 3em;
+	bottom: 1em;
+	z-index: 102;
+}
+.hype-ad .close-ad {
+	float: right;
+	top: -1.5em;
+	position: relative;
+	border-radius: 50%;
+	background: rgba(0,0,0,.5);
+	height: 44px;
+	width: 44px;
+	text-align: center;
+	line-height: 40px;
+	margin-right: -44px;
+	right: 20px;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.hype-ad img {
+	background: #fff;
+    border-radius: 50%;
+    width: 3em;
+    float: left;
+}
+.hype-ad p {
+	float: left;
+	margin: 0 1em;
+}
+.hype-ad a {
+	color: #fff;
+	padding: 8px 16px;
+	background: #f30686;
+	border-color: #f30686;
+	border-radius: 6px;
+	float: left;
+	margin-top: 1em;
+}
+.hype-ad a:hover {
+	opacity: .8;
+}
+@media only screen and (max-width: 1300px) {
+	.hype-ad {
+	    bottom: 6em;
+	    right: calc(50% - 215px);
+	}
+}
+@media only screen and (max-width: 500px) {
+  	.hype-ad {
+		font-size: .75em;
+		right: calc(50% - 165px);
+		bottom: -12em;
+	}
+	.hype-ad a {
+		display: block;
+		width: 100%;
+		text-align: center;
+		height: 40px;
+		line-height: 27px;
+	}
+  }
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+.hype-ad {
+		bottom: -20em;
+	}
 }
