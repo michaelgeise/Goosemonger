@@ -314,6 +314,9 @@ header, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper n
 	text-align: center;
 	padding: 8px 0;
 }
+.banner-load {
+	display: none;
+}
 #close-hype-ad {
 	float: right;
 	position: relative;

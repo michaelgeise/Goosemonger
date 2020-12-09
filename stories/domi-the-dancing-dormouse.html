@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css?v1.2" />
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 		<!-- custom demo style -->
-		<link rel="stylesheet" type="text/css" href="css/story.css?v1.2" />
+		<link rel="stylesheet" type="text/css" href="css/story.css?v1.3" />
 		<script src="js/modernizr.custom.js"></script>
 		<script>
 	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -29,7 +29,7 @@
     	</script>
 	</head>
 	<body>
-		<div id="hype-ad">
+		<div id="hype-ad" class="banner-load">
 			<a href="https://hypedancecommunity.com/">Check out HYPE Dance Community: Kids Virtual Dance Lessons</a>
 			<div id="close-hype-ad">x</div>
 		</div>
@@ -282,13 +282,18 @@
 
 				//x button to close ad
 
-				if (localStorage.getItem('cookieSeen') != 'shown') {
-				  $('#hype-ad').delay(2000).fadeIn();
-				  localStorage.setItem('cookieSeen','shown')
-				};
+				if (document.cookie.split(';').some((item) => item.includes('hypeadbanner=1'))) {
+				    console.log('The cookie "reader" has "1" for value')
+				} else {
+					$('#hype-ad').removeClass("banner-load").fadeIn( "slow" );
+				}
+
+
 				$('#close-hype-ad').click(function() {
-				  $('#hype-ad').slideToggle();
+					$('#hype-ad').slideToggle();
+					document.cookie = "hypeadbanner=1";
 				})
+
 
 				
 			});	
