@@ -305,80 +305,44 @@ header, .bb-custom-wrapper nav a.bb-custom-icon-arrow-left, .bb-custom-wrapper n
 }
 
 /*hype ad*/
-.full-screen .hype-ad {
+.full-screen #hype-ad {
 	display: none;
 }
-.hype-ad {
-	background: #4e2fa2;
-	border-radius: 20px;
+#hype-ad {
 	color: #fff;
-	max-width: 600px;
-	padding: 1em;
-	text-align: left;
-	position: absolute;
-	right: 3em;
-	bottom: 1em;
-	z-index: 102;
+	background: #f30686;
+	text-align: center;
+	padding: 8px 0;
 }
-.hype-ad .close-ad {
+#close-hype-ad {
 	float: right;
-	top: -1.5em;
 	position: relative;
 	border-radius: 50%;
-	background: rgba(0,0,0,.5);
 	height: 44px;
 	width: 44px;
 	text-align: center;
 	line-height: 40px;
-	margin-right: -44px;
-	right: 20px;
 	font-size: 1.5em;
 	cursor: pointer;
+	margin-top: -8px;
 }
-.hype-ad img {
-	background: #fff;
-    border-radius: 50%;
-    width: 3em;
-    float: left;
-}
-.hype-ad p {
-	float: left;
-	margin: 0 1em;
-}
-.hype-ad a {
+#hype-ad a {
 	color: #fff;
-	padding: 8px 16px;
-	background: #f30686;
-	border-color: #f30686;
-	border-radius: 6px;
-	float: left;
-	margin-top: 1em;
+    width: calc(100% - 44px);
+    margin-right: -44px;
+    display: inline-block;
+    line-height: 30px;
 }
-.hype-ad a:hover {
+#hype-ad a:hover {
 	opacity: .8;
 }
-@media only screen and (max-width: 1300px) {
-	.hype-ad {
-	    bottom: 6em;
-	    right: calc(50% - 215px);
-	}
+#close-hype-ad:hover {
+	background-color: #e01382;
 }
-@media only screen and (max-width: 500px) {
-  	.hype-ad {
-		font-size: .75em;
-		right: calc(50% - 165px);
-		bottom: -12em;
-	}
-	.hype-ad a {
-		display: block;
-		width: 100%;
-		text-align: center;
-		height: 40px;
-		line-height: 27px;
-	}
-  }
-@media only screen and (orientation: landscape) and (max-width: 900px) {
-.hype-ad {
-		bottom: -20em;
+@media only screen and (max-width: 600px) {
+	#hype-ad a {
+	    margin: 0 0 0 16px;
+	    text-align: left;
+	    width: calc(100% - 60px);
 	}
 }
