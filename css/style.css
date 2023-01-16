@@ -253,13 +253,13 @@ header.masthead .intro-text {
   background: #fff;
   border-radius: .5rem;
 }
+
 #cutout {
   background: rgb(0,120,255);
-  background: linear-gradient(315deg, rgba(0,120,255,1) 20%, rgba(159,215,255,1) 80%);
-  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #7300ff, #FF3600, #9fd7ff, #b300ff);
   background-size: 200% 200%;
+  animation: gradient 12s ease infinite;
 }
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -271,6 +271,7 @@ header.masthead .intro-text {
     background-position: 0% 50%;
   }
 }
+
 
 header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
